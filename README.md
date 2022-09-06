@@ -163,7 +163,7 @@
   - Using this Macro we can mention that who is writing this Linux device driver or module. 
   
   ```c
-  MODULE_AUTHOR("Saishiva Reddy Gatla");
+  MODULE_AUTHOR("Darky");
   ```
   
   ## Module Description
@@ -269,7 +269,7 @@
   #include <linux/kernel.h>
   
   MODULE_LICENSE("GPL");
-  MODULE_AUTHOR("Saishiva Reddy");
+  MODULE_AUTHOR("Darky");
   MODULE_DESCRIPTION("Module to print Hello World");
   
   static int __init hello_init(void)
@@ -309,7 +309,7 @@
   ```bash
   obj-m := Hello.o
   # Cross Compilation
-  KERNELDIR = /lib/modules/5.15.48-Shiva-v7l+/build
+  KERNELDIR = /lib/modules/5.15.48-Darky-v7l+/build
   default :
   	make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -C $(KERNELDIR) M=$(PWD) modules
   clean :
